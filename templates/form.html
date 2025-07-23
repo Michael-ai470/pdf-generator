@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data Generator</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="icon" href="\favicon.png" type="image/x-icon">
+  <script defer src="/static/status.js"></script>
+  <script defer src="/static/form.js"></script>
+</head> 
+<body>
+  <div class="container">
+    <h1>User Data Generator</h1>
+    <div class="status" id="status">Checking...</div>
+    <form id="pdf-form">
+      <input name="full_name" placeholder="Full Name" required>
+      <input name="email" type="email" placeholder="Email Address" required>
+      <input name="academic_status" placeholder="Academic Status" required>
+      <input name="skill_set" placeholder="Skill Set" required>
+      <textarea name="about" placeholder="Something great about yourself" rows="4" required></textarea>
+      <button type="submit">Generate PDF</button>
+    </form>
+    <!-- new message box -->
+    <div id="message" style="margin-top:1rem; text-align:center; color: var(--mint-green);"></div>
+  </div>
+</body>
+</html>
